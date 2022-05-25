@@ -2,7 +2,7 @@
 # from turtle import update
 
 
-student_data = {'id1': 
+a= {'id1': 
   {'name': ['Sara'], 
     'class': ['V'], 
     'subject_integration': ['english, math, science']
@@ -23,4 +23,13 @@ student_data = {'id1':
     'subject_integration': ['english, math, science']
   },
 }
-
+# b={}
+# for key,value in a.items():
+#     if value not in b.values():
+#         b[key]=value
+# print(b)
+b={}
+for key,value in a.items():
+    if value not in b.values():
+        b[key] = value
+print(b)       
