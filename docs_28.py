@@ -1,10 +1,14 @@
 # Q28.Write a Python program to convert a list into a nested dictionary of keys.
-# num_list = [1, 2, 3, 4]
+
 # Sample output:
 # {1: {2: {3: {4: {}}}}}
-num_list = [1, 2, 3, 4]
-new_dict = current = {}
-for i in num_list:
-    current[i] = {}
-    current = current[i]
-print(new_dict)
+a= [1, 2, 3, 4]
+temp={}
+i=len(a)-1
+while i>=0:
+    d = {}
+    k=a[i]
+    d[k]=temp
+    temp = d
+    i=i-1
+print(d)

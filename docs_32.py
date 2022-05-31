@@ -9,13 +9,8 @@
 # 5     50      5                                                                                               
 # 6     60      6
 a= {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
-x=a.keys()
-c=x
-print(c)
-y=a.values()
-d=y
-i=0
-while i<len(d):
-    print(y)
-    i=i+1
-
+print("key","value","count")
+c=0
+for x,y in a.items():
+    c+=1
+    print(x,"  ",y,"  ",c)
